@@ -5,6 +5,9 @@
     <title>Quiz App</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
   </head>
@@ -14,18 +17,28 @@
       
     </header>
     <main>
+      <img id="bg-img" src="./img/quiz_background.jpg" />
       <div id="intro-overlay">
+        <img id="overlay-img" src="./img/quiz_background.jpg" />
         <!-- this div acts as an overlay, which can be toggled hidden -->
         <h1>Welcome to the Java Quiz!</h1>
+        
         <button id="start-button">Start Quiz</button>
       </div>
-      <div id="quiz-main hidden">
+      <div id="quiz-main">
         <section id="left-section">
-          <p>Question <span>1</span> of 10</p>
-          <p>Is this a question?</p>
+          <p id="question-number-statement">Question <span id="question-number"></span> of 10</p>
+          <p id="question">Is this a question?</p>
         </section>
         <section id="right-section">
-  
+          <ul id="options">
+            <!--quiz answer options here-->
+            
+          </ul>
+          <div id="submit-button">
+            <p>Submit Answer</p>
+          </div>
+          
         </section>
       </div>
      
